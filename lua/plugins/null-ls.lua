@@ -16,6 +16,7 @@ return {
           end,
         }),
         nls.builtins.formatting.prettierd,
+        nls.builtins.diagnostics.hadolint,
       },
     }
   end,

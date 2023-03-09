@@ -9,6 +9,7 @@ return {
       "dockerfile-language-server",
       "dot-language-server",
       "flake8",
+      "hadolint",
       "eslint_d",
       "intelephense",
       "tailwindcss-language-server",
@@ -16,6 +17,7 @@ return {
       "phpstan",
       "pint",
       "pyright",
+      "prettierd",
     },
   },
 }
