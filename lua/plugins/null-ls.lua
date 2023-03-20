@@ -18,7 +18,7 @@ return {
         }),
         nls.builtins.formatting.prettierd,
         nls.builtins.formatting.rustywind.with({
-          extra_filetypes = { "php" },
+          extra_filetypes = { "blade" },
         }),
         nls.builtins.formatting.pint,
         nls.builtins.diagnostics.hadolint,
