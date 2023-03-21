@@ -4,6 +4,7 @@ return {
     local nls = require("null-ls")
     return {
       sources = {
+        nls.builtins.formatting.black,
         nls.builtins.formatting.blade_formatter,
         nls.builtins.diagnostics.eslint_d.with({
           condition = function(utils)
