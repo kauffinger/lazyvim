@@ -4,6 +4,7 @@ return {
     ensure_installed = {
       "black",
       "stylua",
+      "blade-formatter",
       "shellcheck",
       "shfmt",
       "docker-compose-language-service",
