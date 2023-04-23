@@ -3,6 +3,17 @@
 A starter template for [LazyVim](https://github.com/LazyVim/LazyVim).
 Refer to the [documentation](https://lazyvim.github.io/installation) to get started.
 
+## Laravel Native
+This config is setup with the best available dev tooling for laravel
+
+- Intelephense
+- Blade Language Support
+- Blade Formatter
+- Pint
+- Rustywind
+- Tailwind LS
+- XDebug with configuration for Laravel Sail
+
 ## Additions
 
 ### LSP
