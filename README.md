@@ -1,4 +1,6 @@
-# 💤 LazyVim flavored
+# 💤 LazyVim + Laravel
+(and some stuff I also use)
+This is my best effort to fully integrate my LazyVim config with Laravel and all Laravel-related tools.
 
 A starter template for [LazyVim](https://github.com/LazyVim/LazyVim).
 Refer to the [documentation](https://lazyvim.github.io/installation) to get started.
