@@ -1,4 +1,5 @@
 # 💤 LazyVim + Laravel
+
 (and some stuff I also use)
 This is my best effort to fully integrate my LazyVim config with Laravel and all Laravel-related tools.
 
@@ -6,6 +7,7 @@ A starter template for [LazyVim](https://github.com/LazyVim/LazyVim).
 Refer to the [documentation](https://lazyvim.github.io/installation) to get started.
 
 ## Laravel Native
+
 This config is setup with the best available dev tooling for laravel
 
 - Intelephense
@@ -17,6 +19,15 @@ This config is setup with the best available dev tooling for laravel
 - XDebug with configuration for Laravel Sail
 
 ## Additions
+
+### Requirements
+
+Optional:
+
+- lazygit
+- lazydocker
+
+(you should use both, they are great)
 
 ### LSP
 
