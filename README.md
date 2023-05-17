@@ -14,6 +14,7 @@ This config is setup with the best available dev tooling for laravel
 - Blade Language Support
 - Blade Formatter
 - Pint
+- Phpstan (make sure you configure larastan in your project)
 - Rustywind
 - Tailwind LS
 - XDebug with configuration for Laravel Sail
