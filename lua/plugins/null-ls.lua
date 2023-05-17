@@ -23,6 +23,7 @@ return {
             extra_filetypes = { "blade" },
           }),
           nls.builtins.formatting.pint,
+          nls.builtins.diagnostics.phpstan,
           nls.builtins.diagnostics.hadolint,
         },
       }
