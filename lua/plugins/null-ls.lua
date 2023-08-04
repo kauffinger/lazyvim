@@ -23,7 +23,11 @@ return {
             extra_filetypes = { "blade" },
           }),
           nls.builtins.formatting.pint,
-          nls.builtins.diagnostics.phpstan,
+          nls.builtins.diagnostics.phpstan.with({
+            extra_args = {
+              "--memory-limit=2G",
+            },
+          }),
           nls.builtins.diagnostics.hadolint,
         },
       }
