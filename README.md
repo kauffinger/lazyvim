@@ -4,7 +4,7 @@
 This is my best effort to fully integrate my LazyVim config with Laravel and all Laravel-related tools.
 Works great with Livewire v3 as well as Volt and Folio.
 When using Volt, use class-based syntax for maximum compatibility.
-Functional Volt works, too but has issues with `$this`.
+Functional Volt works, too, but has issues with `$this`.
 
 A starter template for [LazyVim](https://github.com/LazyVim/LazyVim).
 Refer to the [documentation](https://lazyvim.github.io/installation) to get started.
