@@ -6,7 +6,6 @@ return {
     events = { "BufWritePost", "BufReadPost", "InsertLeave" },
     linters_by_ft = {
       fish = { "fish" },
-      php = { "phpstan" },
       dockerfile = { "hadolint" },
       python = { "pylint" },
       -- Use the "*" filetype to run linters on all filetypes.
