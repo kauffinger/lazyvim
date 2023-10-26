@@ -47,7 +47,7 @@ Optional:
 
 ### Theme
 
-- Changed to gruvbox
+- I concede, we are back to using catppuccin. There is just too many integrations.
 
 ## Troubleshooting
 
