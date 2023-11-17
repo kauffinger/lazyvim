@@ -23,8 +23,12 @@ return {
             name = "Listen for Xdebug",
             port = 9003,
             pathMappings = {
-              ["/var/www/html"] = "${workspaceFolder}",
+              -- For some reason xdebug sometimes fails for me, depending on me
+              -- using herd or docker. To get it to work, change the order of the mappings.
+              -- The first mapping should be the one that you are actively using.
+              -- This only started recently, so I don't know what changed.
               ["${workspaceFolder}"] = "${workspaceFolder}",
+              ["/var/www/html"] = "${workspaceFolder}",
             },
           },
         }
