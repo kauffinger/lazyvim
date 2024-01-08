@@ -21,6 +21,7 @@ This config is setup with the best available dev tooling for laravel
 - Rustywind
 - Tailwind LS
 - XDebug with configuration for Laravel Sail
+- Treesitter beta for blade files included
 
 ## Additions
 
@@ -39,11 +40,6 @@ Optional:
 
 - Tailwind support
 - Intelephense for php (best in class for Laravel development)
-
-### Formatting
-
-- Eslintd for when an `.eslintrc.json` is found (use the eslint prettier plugin for best performance and compatibility)
-- Tailwind color preview
 
 ### Theme
 
