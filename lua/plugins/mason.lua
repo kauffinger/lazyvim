@@ -12,6 +12,7 @@ return {
       "docker-compose-language-service",
       "dockerfile-language-server",
       "dot-language-server",
+      "emmet-ls",
       "eslint_d",
       "flake8",
       "hadolint",
