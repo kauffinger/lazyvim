@@ -38,6 +38,7 @@ return {
           "src/parser.c",
           -- 'src/scanner.cc',
         },
+        branch = "main",
         generate_requires_npm = true,
         requires_generate_from_grammar = true,
       },
