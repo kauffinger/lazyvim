@@ -1,9 +1,9 @@
 return {
-  -- Configure LazyVim to load gruvbox
+  { "ofirgall/ofirkai.nvim" }, -- colorscheme
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "catppuccin-mocha",
+      colorscheme = "ofirkai-darkblue",
     },
   },
 }

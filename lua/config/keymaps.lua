@@ -3,20 +3,17 @@
 -- Add any additional keymaps here
 
 local Util = require("lazyvim.util")
-local function map(mode, lhs, rhs, opts)
-  local keys = require("lazy.core.handler").handlers.keys
-  ---@cast keys LazyKeysHandler
-  -- do not create the keymap if a lazy keys handler exists
-  if not keys.active[keys.parse({ lhs, mode = mode }).id] then
-    opts = opts or {}
-    opts.silent = opts.silent ~= false
-    vim.keymap.set(mode, lhs, rhs, opts)
-  end
-end
 
-map("n", "<leader>gd",
-  function()
-    Util.float_term({ "lazydocker", "-f", Util.get_root() .. "docker-compose.yml" },
-      { cwd = Util.get_root(), esc_esc = false })
-  end,
-  { desc = "LazyDocker (root dir)" })
+vim.keymap.set("n", "<leader>gd", function()
+  Util.float_term(
+    { "lazydocker", "-f", Util.get_root() .. "docker-compose.yml" },
+    { cwd = Util.get_root(), esc_esc = false }
+  )
+end, { desc = "LazyDocker (root dir)" })
+
+vim.keymap.set("i", "jj", "<ESC>", { noremap = true, silent = true })
+vim.keymap.set("n", "<leader>a", "<CMD>:w<CR>", { noremap = true, silent = true, desc = "Save File" })
+vim.keymap.set("n", "<leader>q", "<CMD>:q<CR>", { noremap = true, silent = true, desc = "Quit File" })
+vim.keymap.set("v", "<A-j>", ":m '>+1<CR>gv=gv", opts)
+vim.keymap.set("v", "<A-k>", ":m '<-2<CR>gv=gv", opts)
+vim.keymap.set("v", "p", '"_dP', opts)
