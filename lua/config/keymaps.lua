@@ -17,3 +17,5 @@ vim.keymap.set("n", "<leader>q", "<CMD>:q<CR>", { noremap = true, silent = true,
 vim.keymap.set("v", "<A-j>", ":m '>+1<CR>gv=gv", opts)
 vim.keymap.set("v", "<A-k>", ":m '<-2<CR>gv=gv", opts)
 vim.keymap.set("v", "p", '"_dP', opts)
+vim.keymap.set("n", "<A-l>", "<CMD>cnext<CR>", opts)
+vim.keymap.set("n", "<A-h>", "<CMD>cprev<CR>", opts)
