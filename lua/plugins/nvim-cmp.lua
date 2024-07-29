@@ -20,7 +20,7 @@ return {
   setup = function(_, opts)
     require("cmp").setup({
       completion = {
-        keyword_length = 0,
+        keyword_length = 1,
       },
     })
   end,

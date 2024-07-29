@@ -12,8 +12,6 @@ vim.keymap.set("n", "<leader>gd", function()
 end, { desc = "LazyDocker (root dir)" })
 
 vim.keymap.set("i", "jj", "<ESC>", { noremap = true, silent = true })
-vim.keymap.set("n", "<leader>a", "<CMD>:w<CR>", { noremap = true, silent = true, desc = "Save File" })
-vim.keymap.set("n", "<leader>q", "<CMD>:q<CR>", { noremap = true, silent = true, desc = "Quit File" })
 vim.keymap.set("v", "<A-j>", ":m '>+1<CR>gv=gv", opts)
 vim.keymap.set("v", "<A-k>", ":m '<-2<CR>gv=gv", opts)
 vim.keymap.set("v", "p", '"_dP', opts)
