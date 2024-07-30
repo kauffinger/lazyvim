@@ -3,3 +3,5 @@ require("config.lazy")
 
 -- to make tailwind works properly
 require("lspconfig").tailwindcss.setup({})
+
+vim.g.copilot_no_tab_map = true
