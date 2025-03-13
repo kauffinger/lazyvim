@@ -7,8 +7,9 @@
     "lazyvim.plugins.extras.lang.tailwind",
     "lazyvim.plugins.extras.util.dot"
   ],
+  "install_version": 7,
   "news": {
     "NEWS.md": "10960"
   },
-  "version": 7
+  "version": 8
 }
