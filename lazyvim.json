@@ -1,7 +1,11 @@
 {
   "extras": [
+    "lazyvim.plugins.extras.ai.copilot",
     "lazyvim.plugins.extras.lang.git",
     "lazyvim.plugins.extras.lang.haskell",
+    "lazyvim.plugins.extras.lang.markdown",
+    "lazyvim.plugins.extras.lang.ocaml",
+    "lazyvim.plugins.extras.lang.php",
     "lazyvim.plugins.extras.lang.rust",
     "lazyvim.plugins.extras.lang.sql",
     "lazyvim.plugins.extras.lang.tailwind",
@@ -9,7 +13,7 @@
   ],
   "install_version": 7,
   "news": {
-    "NEWS.md": "10960"
+    "NEWS.md": "11866"
   },
   "version": 8
 }
