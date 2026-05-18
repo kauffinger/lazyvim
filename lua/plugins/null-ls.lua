@@ -1,17 +1,23 @@
 return {
   {
     "nvimtools/none-ls.nvim",
-    opts = function()
+    opts = function(_, opts)
       local nls = require("null-ls")
-      return {
-        sources = {
-          nls.builtins.diagnostics.phpstan.with({
-            extra_args = {
-              "--memory-limit=2G",
-            },
-          }),
+      opts.sources = opts.sources or {}
+      
+      -- Remove phpcs if it was added by LazyVim PHP extra
+      opts.sources = vim.tbl_filter(function(source)
+        return not (source.name == "phpcs")
+      end, opts.sources)
+      
+      -- Add our custom sources
+      table.insert(opts.sources, nls.builtins.diagnostics.phpstan.with({
+        extra_args = {
+          "--memory-limit=2G",
         },
-      }
+      }))
+      
+      return opts
     end,
   },
   {
