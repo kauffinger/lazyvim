@@ -2,8 +2,17 @@ return {
   {
     "neovim/nvim-lspconfig",
     opts = {
-      -- @type lspconfig.options
       servers = {
+        intelephense = {
+          filetypes = { "php", "blade" },
+          -- intelephense only parses documents it is told are php
+          get_language_id = function(_, filetype)
+            if filetype == "blade" then
+              return "php"
+            end
+            return filetype
+          end,
+        },
         emmet_ls = {
           filetypes = {
             "astro",

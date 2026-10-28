@@ -1,6 +1,10 @@
 return {
-  "williamboman/mason.nvim",
+  "mason-org/mason.nvim",
   opts = {
+    pip = {
+      -- the venv pip is too old to honour the 7 day cooldown in ~/.config/pip/pip.conf
+      upgrade_pip = true,
+    },
     ensure_installed = {
       "actionlint",
       "ansible-language-server",
@@ -20,6 +24,7 @@ return {
       "intelephense",
       "nginx-language-server",
       "php-debug-adapter",
+      "phpactor",
       "phpstan",
       "pint",
       "prettierd",
