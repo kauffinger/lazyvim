@@ -10,6 +10,10 @@ return {
         opts.sources,
         nls.builtins.diagnostics.phpstan.with({
           extra_args = { "--memory-limit=2G" },
+          -- none-ls runs every source from the root of the first buffer it attached to
+          cwd = function(params)
+            return require("null-ls.utils").root_pattern("composer.json")(params.bufname)
+          end,
         })
       )
     end,

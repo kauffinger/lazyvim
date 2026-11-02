@@ -8,8 +8,7 @@ return {
             tailwindCSS = {
               experimental = {
                 classRegex = {
-                  "@?class\\(([^]*)\\)",
-                  "'([^']*)'",
+                  { "@?class\\(([^)]*)\\)", "'([^']*)'" },
                 },
               },
             },
